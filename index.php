@@ -1,7 +1,7 @@
 <?php
 
-// include_once 'connection.php';
+//include_once 'connection.php';
 
-connect();
+//connect();
 
 echo 'Hello Sucka';
