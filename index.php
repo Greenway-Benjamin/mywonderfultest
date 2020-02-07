@@ -4,6 +4,6 @@
 
 include_once 'connection.php';
 
-connect();
+$connection = connect();
 
 echo 'Hello Sucka';
