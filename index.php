@@ -6,9 +6,12 @@ include_once 'connection.php';
 
 $connection = connect();
 
-$sql = "insert into hats values (1,'cathat')";
+$sql = "select * from hats";
 $stmt = $connection->prepare($sql);
 $stmt->execute();
+$hatsarray = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $stmt->closeCursor();
+
+echo $hatsarray.id . ' and ' . $hatsarray.name;
 
 echo 'Hello Sucka';
