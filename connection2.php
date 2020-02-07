@@ -1,7 +1,4 @@
 <?php
-
-ini_set('display_errors', 1);
-​
 function get_db() {
 $db = parse_url(getenv("DATABASE_URL"));
 
