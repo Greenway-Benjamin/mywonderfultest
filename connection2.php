@@ -31,7 +31,6 @@ function getdb() {
 			die();
 		}
 ​*/
-	return $db;
 
 
 

@@ -4,7 +4,7 @@
 
 include_once 'connection2.php';
 
-$connection = get_db();
+$connection = getdb();
 
 $sql = "select * from hats";
 $stmt = $connection->prepare($sql);
