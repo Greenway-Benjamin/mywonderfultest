@@ -13,6 +13,6 @@ $hatsarray = $stmt->fetchAll(PDO::FETCH_ASSOC);
 $stmt->closeCursor();
 
 foreach ($hatsarray as $hat) {
-echo $hatsarray[id] . " and " . $hatsarray[name];
+echo $hatsarray['id'] . " and " . $hatsarray['name'];
 }
 echo 'Hello Sucka';
