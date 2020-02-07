@@ -32,6 +32,6 @@ function getdb() {
 		}
 ​*/
 
-
+return 1;
 
 }
