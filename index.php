@@ -1,7 +1,7 @@
 <?php
 
-include_once 'testling.php';
+include_once 'connection.php';
 
-connectedfunction();
+connect();
 
 echo 'Hello Sucka';
