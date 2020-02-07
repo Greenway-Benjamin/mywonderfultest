@@ -17,6 +17,7 @@ $pdo = new PDO("pgsql:" . sprintf(
     $db["pass"],
     ltrim($db["path"], "/")
 ));
+    return $pdo;
 } catch(PDOException $e){
  echo 'Broke, sucka';   
 }
