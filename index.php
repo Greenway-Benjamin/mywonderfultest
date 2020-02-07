@@ -6,7 +6,7 @@ include_once 'connection.php';
 
 $connection = connect();
 
-$sql = "CREATE TABLE hats (id INT, name VARCHAR (20))";
+$sql = "insert into hats values (1,'cathat')";
 $stmt = $connection->prepare($sql);
 $stmt->execute();
 $stmt->closeCursor();
