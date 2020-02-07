@@ -6,4 +6,9 @@ include_once 'connection.php';
 
 $connection = connect();
 
+$sql = "CREATE TABLE hats (id INT, name VARCHAR (20))";
+$stmt = $connection->prepare($sql);
+$stmt->execute();
+$stmt->closeCursor();
+
 echo 'Hello Sucka';
