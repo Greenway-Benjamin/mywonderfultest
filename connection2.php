@@ -2,8 +2,7 @@
 
 ini_set('display_errors', 1);
 ​
-function getdb(){
-	$db = NULL;
+function getdb() {
 ​
 	/*try {
 		// default Heroku Postgres configuration URL
