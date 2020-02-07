@@ -1,7 +1,7 @@
 <?php
 
 function connect() {
-$db = parse_url(getenv("postgres://lhedqyiaipvdah:c31b22f594e65a47f7498e694612ea9965ed9c9a8da17464368660de119634fa@ec2-184-72-235-80.compute-1.amazonaws.com:5432/d5tf628c1e73sa"));
+$db = parse_url(getenv("DATABASE_URL"));
 
 $host = 'ec2-184-72-235-80.compute-1.amazonaws.com';
 $port = '5432';
