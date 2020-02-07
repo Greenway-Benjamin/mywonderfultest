@@ -5,7 +5,7 @@ ini_set('display_errors', 1);
 function get_db() {
 	$db = NULL;
 ​
-	try {
+	/*try {
 		// default Heroku Postgres configuration URL
 		$dbUrl = getenv('DATABASE_URL');
 ​
@@ -30,10 +30,9 @@ function get_db() {
 			echo "Error connecting to DB. Details: $ex";
 			die();
 		}
-​
+​*/
 	return $db;
 
 
 
 }
-?>
