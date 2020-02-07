@@ -2,9 +2,9 @@
 
   ini_set('display_errors', 1);
 
-include_once 'connection2.php';
+include_once 'connection.php';
 
-$connection = getdb();
+$connection = connect();
 
 $sql = "select * from hats";
 $stmt = $connection->prepare($sql);
